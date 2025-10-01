@@ -114,8 +114,7 @@
     standalone.\
   - **Vấn đề 2:** `IllegalAccessError` khi chạy với Java 17 do module access `sun.nio.ch.DirectBuffer`.\
     → Khắc phục bằng cách chạy với VM options: `--add-exports` và `--add-opens` (đặt trong `build.sbt` khi `sbt run`, hoặc trong Run Configuration của IDE). Đồng thời bật `fork := true` cho `sbt run`.
-  - **Vấn đề 3 (nếu gặp):** Sai đường dẫn dữ liệu hoặc thiếu cột `text`.\
-    → Kiểm tra working directory; nếu schema khác, thay `textCol` trong `Lab17_NLPPipeline.scala` hoặc in schema với `dfRaw.printSchema()`.
+
   
   ### References
   
